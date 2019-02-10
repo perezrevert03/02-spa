@@ -8,6 +8,12 @@ body {
     margin-top: 20px;
 }
 
+.card-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 
 /* Animaciones */
 
