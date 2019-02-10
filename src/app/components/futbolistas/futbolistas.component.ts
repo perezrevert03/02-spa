@@ -7,7 +7,7 @@ import { DestacadosService, Destacado } from '../../servicios/destacados.service
 })
 export class FutbolistasComponent implements OnInit {
 
-  destacados: any[] = [];
+  destacados: Destacado[] = [];
 
   // tslint:disable-next-line:variable-name
   constructor(private _destacadosService: DestacadosService) {
