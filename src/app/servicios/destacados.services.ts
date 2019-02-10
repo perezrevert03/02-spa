@@ -98,12 +98,12 @@ export class DestacadosService {
         console.log('Servicio preparado para usar!!!');
     }
 
-    getDestacados() {
+    getDestacados(): Destacado[] {
         return this.destacados;
     }
 }
 
-interface Destacado {
+export interface Destacado {
     nombre: string;
     posicion: string;
     bio: string;

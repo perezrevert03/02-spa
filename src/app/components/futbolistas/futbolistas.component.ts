@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DestacadosService } from '../../servicios/destacados.services';
+import { DestacadosService, Destacado } from '../../servicios/destacados.services';
 
 @Component({
   selector: 'app-futbolistas',
