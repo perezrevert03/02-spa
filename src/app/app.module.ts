@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 
 // Servicios
+import { DestacadosService } from './servicios/destacados.services';
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -25,7 +26,7 @@ import { FutbolistasComponent } from './components/futbolistas/futbolistas.compo
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [DestacadosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
