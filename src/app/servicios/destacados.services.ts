@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class DestacadosService {
 
-    private destacados: any[] = [
+    private destacados: Destacado[] = [
         {
           nombre: 'Arthur Melo',
           posicion: 'Centrocampista',
@@ -101,4 +101,13 @@ export class DestacadosService {
     getDestacados() {
         return this.destacados;
     }
+}
+
+interface Destacado {
+    nombre: string;
+    posicion: string;
+    bio: string;
+    img: string;
+    nacimiento: string;
+    equipo: string;
 }
