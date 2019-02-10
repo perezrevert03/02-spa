@@ -40,7 +40,7 @@ export class DestacadosService {
           nombre: 'Jordi Alba',
           posicion: 'Lateral izquierdo',
           bio: 'Empezó a jugar en 1996 para el At. Hospitalense, uno de los equipos de su ciudad natal. En 1998, fichó por el F. C. Barcelona. Tras estar siete años en las categorías inferiores del F. C. Barcelona, en 2005 deja La Masía para recalar en las filas del UE Cornellà. En la segunda temporada fue fichado por el Valencia CF. El 28 de junio de 2012, mientras se disputaba la Eurocopa, el Valencia y el Barcelona llegaron a un principio de acuerdo para el traspaso del jugador a cambio de 14 millones de euros. También es internacional con la selección de España, con la que fue campeón de la Eurocopa 2012.',
-          img: 'assets/img/alga.png',
+          img: 'assets/img/alba.png',
           nacimiento: '1989-03-21',
           equipo: 'FC Barcelona'
         },
