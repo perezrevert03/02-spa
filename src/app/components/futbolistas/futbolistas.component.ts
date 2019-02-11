@@ -16,7 +16,6 @@ export class FutbolistasComponent implements OnInit {
 
   ngOnInit() {
     this.destacados = this._destacadosService.getDestacados();
-    console.log(this.destacados);
   }
 
 }

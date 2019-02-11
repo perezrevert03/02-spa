@@ -112,6 +112,10 @@ export class DestacadosService {
     getDestacados(): Destacado[] {
         return this.destacados;
     }
+
+    getDestacado(index: number): Destacado {
+      return this.destacados[index];
+    }
 }
 
 export interface Destacado {

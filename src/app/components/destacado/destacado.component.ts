@@ -1,14 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+import { DestacadosService } from '../../servicios/destacados.services';
 
 @Component({
   selector: 'app-destacado',
   templateUrl: './destacado.component.html'
 })
-export class DestacadoComponent implements OnInit {
+export class DestacadoComponent {
 
-  constructor() { }
+  destacado: any = { };
 
-  ngOnInit() {
+  // tslint:disable-next-line:variable-name
+  constructor(private activatedRoute: ActivatedRoute, private _destacadosService: DestacadosService) {
+    this.activatedRoute.params.subscribe( params => {
+      this.destacado = this._destacadosService.getDestacado(params.id);
+    });
   }
 
 }
