@@ -11,7 +11,7 @@ export class FutbolistasComponent implements OnInit {
 
   // tslint:disable-next-line:variable-name
   constructor(private _destacadosService: DestacadosService) {
-    console.log('Constructor');
+
   }
 
   ngOnInit() {

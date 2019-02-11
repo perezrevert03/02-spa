@@ -11,9 +11,7 @@
                 {{ futbolista.posicion }} - {{ futbolista.equipo }}
             </small></p>
 
-            <button type="button" class="btn btn-outline-primary btn-block">
-              Ver más...
-            </button>
+            <a [routerLink]="['/destacado', futbolista.id]" class="btn btn-outline-primary">Ver más...</a>
         </div>
     </div>
 
