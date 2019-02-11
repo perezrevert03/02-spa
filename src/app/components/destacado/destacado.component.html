@@ -1,3 +1,19 @@
-<p>
-  destacado works!
-</p>
+<h1 class="animated fadeIn">{{ destacado.nombre }} <small>({{ destacado.nacimiento | date:'dd-MM-yyyy'}})</small></h1>
+<hr>
+
+<div class="row animated fadeIn">
+    <div class="col-md-4">
+        <img [src]="destacado.img" class="img-fluid" [alt]="destacado.nombre">
+        <br><br>
+    </div>
+
+    <div class="col-md-8">
+        <h3 class="m-2">{{ destacado.nombre }} <small>({{ destacado.equipo }})</small></h3>
+        <hr>
+        <p class="text-justify">
+            {{ destacado.bio }}
+        </p>
+
+        <a [routerLink]="['/futbolistas']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+</div>
