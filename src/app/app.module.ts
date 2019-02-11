@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FutbolistasComponent } from './components/futbolistas/futbolistas.component';
+import { DestacadoComponent } from './components/destacado/destacado.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FutbolistasComponent } from './components/futbolistas/futbolistas.compo
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    FutbolistasComponent
+    FutbolistasComponent,
+    DestacadoComponent
   ],
   imports: [
     BrowserModule,
