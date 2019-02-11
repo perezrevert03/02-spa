@@ -114,6 +114,8 @@ export class DestacadosService {
     }
 
     getDestacado(index: number): Destacado {
+      if (index < 0)  { index *= -1; }
+      if (index > 10) { index %= 11; }
       return this.destacados[index];
     }
 }
