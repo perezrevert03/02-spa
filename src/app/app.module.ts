@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { FutbolistasComponent } from './components/futbolistas/futbolistas.component';
 import { DestacadoComponent } from './components/destacado/destacado.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     AboutComponent,
     FutbolistasComponent,
     DestacadoComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
