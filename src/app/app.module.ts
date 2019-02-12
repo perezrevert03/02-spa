@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FutbolistasComponent } from './components/futbolistas/futbolistas.component';
 import { DestacadoComponent } from './components/destacado/destacado.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DestacadoComponent } from './components/destacado/destacado.component';
     HomeComponent,
     AboutComponent,
     FutbolistasComponent,
-    DestacadoComponent
+    DestacadoComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,

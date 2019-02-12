@@ -1,0 +1,26 @@
+<h1 class="animated fadeIn">Buscador <small> "{{ param }}"</small></h1>
+<hr>
+
+<div *ngIf="!destacados.length" class="row">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados para "{{ param }}"
+        </div>
+    </div>
+</div>
+
+<div class="card-columns animated fadeIn">
+    <div class="card text-justify" *ngFor="let futbolista of destacados">
+        <img [src]="futbolista.img" class="card-img-top" [alt]="futbolista.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{ futbolista.nombre }}</h5>
+            <p class="card-text">{{ futbolista.bio }}</p>
+            <p class="card-text"><small class="text-muted">
+                {{ futbolista.posicion }} - {{ futbolista.equipo }}
+            </small></p>
+
+            <a [routerLink]="['/destacado', futbolista.id]" class="btn btn-outline-primary">Ver más...</a>
+        </div>
+    </div>
+
+</div>

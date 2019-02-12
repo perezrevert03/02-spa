@@ -3,12 +3,14 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { FutbolistasComponent } from './components/futbolistas/futbolistas.component';
 import { DestacadoComponent } from './components/destacado/destacado.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'futbolistas', component: FutbolistasComponent },
     { path: 'destacado/:id', component: DestacadoComponent },
+    { path: 'buscar/:jugador', component: BuscadorComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

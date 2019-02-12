@@ -118,6 +118,20 @@ export class DestacadosService {
       if (index > 10) { index %= 11; }
       return this.destacados[index];
     }
+
+    buscarDestacado(nre: string): Destacado[] {
+      const JUGADORES: Destacado[] = [];
+      nre = nre.toLowerCase();
+      console.log('Buscando');
+      this.destacados.forEach(element => {
+        const NOMBRE = element.nombre.toLowerCase();
+        if ( NOMBRE.indexOf(nre) >= 0 ) {
+          JUGADORES.push(element);
+        }
+      });
+
+      return JUGADORES;
+    }
 }
 
 export interface Destacado {
