@@ -1,3 +1,7 @@
+# La Liga App
+
+Se trata de una aplicación que muestra 11 jugadores de La Liga. Esta aplicación forma parte del aprendizaje de Angular.
+
 # Spa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
